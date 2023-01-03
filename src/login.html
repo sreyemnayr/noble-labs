@@ -1,0 +1,96 @@
+@@include("partials/main.html")
+    <head>
+        @@include("partials/title-meta.html", {"title": "Upwind"})
+
+        <!-- Css -->
+        @@include("partials/head-css.html")
+    </head>
+    
+    @@include("partials/body.html")
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="assets/images/logo-icon-64.png" class="d-block mx-auto animate-[spin_10s_linear_infinite]" alt="">
+                </div>
+                <div class="justify-content-center">
+                    <div class="text-center">
+                        <h4 class="mb-0 mt-2 text-lg font-semibold">Upwind</h4>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+        
+        <!-- Hero Start -->
+        <section class="position-relative" style="background: url('assets/images/bg/auth.jpg') center;">
+            <div class="absolute inset-0 bg-black opacity-90"></div>
+            <div class="container-fluid relative">
+                <div class="grid grid-cols-1">
+                    <div class="lg:col-span-4">
+                        <div class="flex flex-col min-h-screen md:px-12 py-12 px-3">
+                            <!-- Start Logo -->
+                            <div class="text-center mx-auto">
+                                <a href="index.html"><img src="assets/images/logo-light.png" alt=""></a>
+                            </div>
+                            <!-- End Logo -->
+
+                            <!-- Start Content -->
+                            <div class="text-center my-auto">
+                                <div class="w-full max-w-sm m-auto px-6 py-8 bg-white dark:bg-black rounded-md shadow-lg shadow-slate-500 dark:shadow-slate-800">
+                                    <div class="grid grid-cols-1">
+                                        <h5 class="mb-8 text-xl dark:text-white font-semibold">Login</h5>
+                                        <form class="ltr:text-left rtl:text-right">
+                                            <div class="grid grid-cols-1">
+                                                <div class="mb-4">
+                                                    <label class="dark:text-white" for="LoginEmail">Email Address:</label>
+                                                    <input id="LoginEmail" type="email" class="form-input mt-3" placeholder="name@example.com">
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <label class="dark:text-white" for="LoginPassword">Password:</label>
+                                                    <input id="LoginPassword" type="password" class="form-input mt-3" placeholder="Password:">
+                                                </div>
+
+                                                <div class="flex justify-between mb-4">
+                                                    <div class="form-checkbox flex items-center mb-0">
+                                                        <input class="ltr:mr-2 rtl:ml-2 border border-inherit w-[14px] h-[14px]" type="checkbox" value="" id="RememberMe">
+                                                        <label class="text-slate-400 dark:text-slate-300" for="RememberMe">Remember me</label>
+                                                    </div>
+                                                    <p class="text-slate-400 mb-0"><a href="reset-password.html" class="text-slate-400 dark:text-slate-300">Forgot password ?</a></p>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <a href="" class="btn bg-green-800 hover:bg-green-900 border-green-800 hover:border-green-900 text-white rounded-md w-full">Login / Sign in</a>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <span class="text-slate-400 dark:text-slate-300 mr-2">Don't have an account ?</span> <a href="signup.html" class="text-dark dark:text-white fw-bold">Sign Up</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Content -->
+
+                            <!-- Start Footer -->
+                            <div class="text-center">
+                                <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> Upwind. Design with <i class="mdi mdi-heart text-green-900"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            </div>
+                            <!-- End Footer -->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        @@include("partials/switcher.html")
+
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        @@include("partials/script-file.html")
+        <!-- JAVASCRIPTS -->
+    </body>
+</html>
