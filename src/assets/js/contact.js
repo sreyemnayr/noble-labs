@@ -29,11 +29,15 @@ function validateForm() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("simple-msg").innerHTML = this.responseText;
+            document.getElementById("simple-msg").innerHTML = JSON.parse(this.responseText)?.success;
             document.forms["myForm"]["name"].value = "";
             document.forms["myForm"]["email"].value = "";
             document.forms["myForm"]["subject"].value = "";
             document.forms["myForm"]["comments"].value = "";
+        }
+        if (this.readyState == 4 && this.status == 400) {
+            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*There was an error - please try again or send an email to hello@noblelabsms.com*</div>";
+            fadeIn();
         }
     };
     xhttp.open("POST", "/api/contactform", true);
