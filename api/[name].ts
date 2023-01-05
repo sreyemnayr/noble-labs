@@ -13,6 +13,8 @@ export default function handler(request, response) {
 
       // Send an email:
       var client = new postmark.ServerClient(process.env.POSTMARK_API_KEY);
+      console.log(client);
+      console.log(process.env.POSTMARK_API_KEY);
 
       client.sendEmail({
         "Tag": "Website Contact Auto-Response",
@@ -25,6 +27,9 @@ export default function handler(request, response) {
         Subject: ${formSubject}\n
         \n
         Message: ${formMessage}`
+      }).catch((e)=>{
+        console.log(e);
+        return response.status(400).json({ error: JSON.stringify(e) });
       });
 
       client.sendEmail({
@@ -40,6 +45,9 @@ export default function handler(request, response) {
                       \n
                       Message: ${formMessage}`
         
+      }).catch((e)=>{
+        console.log(e);
+        return response.status(400).json({ error: JSON.stringify(e) });
       });
       return response.status(200).json({ success: 'Sent' });
     } catch (error) {
