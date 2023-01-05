@@ -1,3 +1,7 @@
+import postmark from "postmark"
+
+const POSTMARK_API_KEY = process.env.POSTMARK_API_KEY || "";
+
 export default function handler(request, response) {
   // api/[name].ts -> /api/lee
   // req.query.name -> "lee"
@@ -9,14 +13,13 @@ export default function handler(request, response) {
     const {formName, formEmail, formSubject, formMessage} = request.body;
 
     // Require:
-      var postmark = require("postmark");
-
+      
       // Send an email:
-      var client = new postmark.ServerClient(process.env.POSTMARK_API_KEY);
+      var client = new postmark.ServerClient(POSTMARK_API_KEY);
 
 
       client.sendEmail({
-        "Tag": "Website Contact Auto-Response",
+        "Tag": "SubmissionResponse",
         "From": "Noble Labs <hello@noblelabsms.com>",
         "To": `${formName} <${formEmail}>`,
         "Subject": "Thanks for your email!",
@@ -27,15 +30,12 @@ export default function handler(request, response) {
         \n
         Message: ${formMessage}`,
         "MessageStream": "outbound"
-      }).then((r) => {
+      }, (r) => {
         console.log(r);
-      }).catch((e)=>{
-        console.log(e);
-        return response.status(400).json({ error: JSON.stringify(e) });
       });
 
       client.sendEmail({
-        "Tag": "Website Contact",
+        "Tag": "FormSubmission",
         "From": "Noble Labs Website <hello@noblelabsms.com>",
         "ReplyTo": `${formName} <${formEmail}>`,
         "Bcc": 'ryan@forkhunger.art',
@@ -48,12 +48,10 @@ export default function handler(request, response) {
                       Message: ${formMessage}`,
         "MessageStream": "outbound"
         
-      }).then((r) => {
+      }, (r) => {
         console.log(r);
-      }).catch((e)=>{
-        console.log(e);
-        return response.status(400).json({ error: JSON.stringify(e) });
       });
+      
       return response.status(200).json({ success: 'Sent' });
     } catch (error) {
       return response.status(400).json({ error: 'My custom 400 error' });
