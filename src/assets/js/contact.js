@@ -1,27 +1,27 @@
 // Contact Form
 function validateForm() {
-    var name = document.forms["myForm"]["name"].value;
-    var email = document.forms["myForm"]["email"].value;
-    var subject = document.forms["myForm"]["subject"].value;
-    var comments = document.forms["myForm"]["comments"].value;
+    var formName = document.forms["myForm"]["name"].value;
+    var formEmail = document.forms["myForm"]["email"].value;
+    var formSubject = document.forms["myForm"]["subject"].value;
+    var formMessage = document.forms["myForm"]["comments"].value;
     document.getElementById("error-msg").style.opacity = 0;
     document.getElementById('error-msg').innerHTML = "";
-    if (name == "" || name == null) {
+    if (formName == "" || formName == null) {
         document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Name*</div>";
         fadeIn();
         return false;
     }
-    if (email == "" || email == null) {
+    if (formEmail == "" || formEmail == null) {
         document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Email*</div>";
         fadeIn();
         return false;
     }
-    if (subject == "" || subject == null) {
+    if (formSubject == "" || formSubject == null) {
         document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Subject*</div>";
         fadeIn();
         return false;
     }
-    if (comments == "" || comments == null) {
+    if (formMessage == "" || formMessage == null) {
         document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*Please enter a Comments*</div>";
         fadeIn();
         return false;
@@ -36,9 +36,14 @@ function validateForm() {
             document.forms["myForm"]["comments"].value = "";
         }
     };
-    xhttp.open("POST", "php/contact.php", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("name=" + name + "&email=" + email + "&subject=" + subject + "&comments=" + comments);
+    xhttp.open("POST", "api/contactform", true);
+    xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    xhttp.send(JSON.stringify({
+        formName,
+        formEmail,
+        formSubject,
+        formMessage
+    }));
     return false;
   }
 
