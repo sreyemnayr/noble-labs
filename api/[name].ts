@@ -1,4 +1,4 @@
-export default function handler(request, response) {
+export default async function handler(request, response) {
 
   var postmark = require("postmark");
 
@@ -22,49 +22,39 @@ export default function handler(request, response) {
 
       let email_one = {
         "Tag": "SubmissionResponse",
-        "From": "ryan@forkhunger.art",
+        "From": "hello@noblelabsms.com",
         "To": `${formName} <${formEmail}>`,
         "Subject": "Thanks for your email!",
-        "TextBody": `We have received your email and one of our associates will be in touch soon!\n
-        Here's what you sent:\n
-        \n
-        Subject: ${formSubject}\n
-        \n
-        Message: ${formMessage}`,
+        "TextBody": `We have received your email and one of our associates will be in touch soon!\nHere's what you sent:\n\nSubject: ${formSubject}\n\nMessage: ${formMessage}`,
         "MessageStream": "outbound"
       }
 
       console.log(email_one);
 
-      client.sendEmail(email_one).then(response => {
+      var sent = await client.sendEmail(email_one);
+      /*
+        .then(response => {
         console.log(response.To);
         console.log(response.SubmittedAt);
         console.log(response.Message);
         console.log(response.MessageID);
         console.log(response.ErrorCode);
-    });
+    })
+      */
+    console.log(sent);
 
-      client.sendEmail({
+      var sent2 = await client.sendEmail({
         "Tag": "FormSubmission",
         "From": "Noble Labs Website <hello@noblelabsms.com>",
         "ReplyTo": `${formName} <${formEmail}>`,
         "Bcc": 'ryan@forkhunger.art',
         "To": `hello@noblelabsms.com`,
         "Subject": `${formSubject} [Website Contact Form]`,
-        "TextBody": `The following message was submitted\n
-                      \n
-                      Subject: ${formSubject}\n
-                      \n
-                      Message: ${formMessage}`,
+        "TextBody": `The following message was submitted\n\nSubject: ${formSubject}\n\nMessage: ${formMessage}`,
         "MessageStream": "outbound"
-        
-      }).then(response => {
-        console.log(response.To);
-        console.log(response.SubmittedAt);
-        console.log(response.Message);
-        console.log(response.MessageID);
-        console.log(response.ErrorCode);
-    });
+      });
+
+      console.log(sent2);
 
       return response.status(200).json({ success: 'Sent' });
     } catch (error) {
