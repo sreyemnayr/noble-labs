@@ -20,11 +20,9 @@ export default function handler(request, response) {
       console.log(client);
 
 
-
-
-      client.sendEmail({
+      let email_one = {
         "Tag": "SubmissionResponse",
-        "From": "Noble Labs <hello@noblelabsms.com>",
+        "From": "ryan@forkhunger.art",
         "To": `${formName} <${formEmail}>`,
         "Subject": "Thanks for your email!",
         "TextBody": `We have received your email and one of our associates will be in touch soon!\n
@@ -34,7 +32,11 @@ export default function handler(request, response) {
         \n
         Message: ${formMessage}`,
         "MessageStream": "outbound"
-      }).then(response => {
+      }
+
+      console.log(email_one);
+
+      client.sendEmail(email_one).then(response => {
         console.log(response.To);
         console.log(response.SubmittedAt);
         console.log(response.Message);
