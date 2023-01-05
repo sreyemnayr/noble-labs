@@ -1,8 +1,9 @@
-import postmark from "postmark"
-
-const POSTMARK_API_KEY = process.env.POSTMARK_API_KEY || "";
-
 export default function handler(request, response) {
+
+  var postmark = require("postmark");
+
+  const POSTMARK_API_KEY = process.env.POSTMARK_API_KEY || "";
+
   // api/[name].ts -> /api/lee
   // req.query.name -> "lee"
   const { name } = request.query;
@@ -15,7 +16,7 @@ export default function handler(request, response) {
     // Require:
       
       // Send an email:
-      var client = new postmark.ServerClient(POSTMARK_API_KEY);
+      let client = new postmark.ServerClient(POSTMARK_API_KEY);
       console.log(client);
 
 
