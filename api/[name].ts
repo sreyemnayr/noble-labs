@@ -51,10 +51,10 @@ export default function handler(request, response) {
       }, (r) => {
         console.log(r);
       });
-      
+
       return response.status(200).json({ success: 'Sent' });
     } catch (error) {
-      return response.status(400).json({ error: 'My custom 400 error' });
+      return response.status(400).json({ error });
     }
 
   }
