@@ -16,6 +16,9 @@ export default function handler(request, response) {
       
       // Send an email:
       var client = new postmark.ServerClient(POSTMARK_API_KEY);
+      console.log(client);
+
+
 
 
       client.sendEmail({
@@ -30,9 +33,13 @@ export default function handler(request, response) {
         \n
         Message: ${formMessage}`,
         "MessageStream": "outbound"
-      }, (r) => {
-        console.log(r);
-      });
+      }).then(response => {
+        console.log(response.To);
+        console.log(response.SubmittedAt);
+        console.log(response.Message);
+        console.log(response.MessageID);
+        console.log(response.ErrorCode);
+    });
 
       client.sendEmail({
         "Tag": "FormSubmission",
@@ -48,12 +55,17 @@ export default function handler(request, response) {
                       Message: ${formMessage}`,
         "MessageStream": "outbound"
         
-      }, (r) => {
-        console.log(r);
-      });
+      }).then(response => {
+        console.log(response.To);
+        console.log(response.SubmittedAt);
+        console.log(response.Message);
+        console.log(response.MessageID);
+        console.log(response.ErrorCode);
+    });
 
       return response.status(200).json({ success: 'Sent' });
     } catch (error) {
+      console.log(error);
       return response.status(400).json({ error });
     }
 
