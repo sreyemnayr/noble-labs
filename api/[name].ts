@@ -27,6 +27,8 @@ export default function handler(request, response) {
         Subject: ${formSubject}\n
         \n
         Message: ${formMessage}`
+      }).then((r) => {
+        console.log(r);
       }).catch((e)=>{
         console.log(e);
         return response.status(400).json({ error: JSON.stringify(e) });
@@ -45,6 +47,8 @@ export default function handler(request, response) {
                       \n
                       Message: ${formMessage}`
         
+      }).then((r) => {
+        console.log(r);
       }).catch((e)=>{
         console.log(e);
         return response.status(400).json({ error: JSON.stringify(e) });
