@@ -36,7 +36,7 @@ function validateForm() {
             document.forms["myForm"]["comments"].value = "";
         }
     };
-    xhttp.open("POST", "api/contactform", true);
+    xhttp.open("POST", "/api/contactform", true);
     xhttp.setRequestHeader("Content-type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         formName,
