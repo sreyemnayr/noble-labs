@@ -23,7 +23,7 @@ export default async function handler(request, response) {
         "Tag": "SubmissionResponse",
         "From": "Noble Labs <hello@noblelabsms.com>",
         //"ReplyTo": `hello@noblelabsms.com`,
-        "ReplyTo": `Jeff@noblelabsms.com`,
+        "ReplyTo": `hello@noblelabsms.com`,
         "To": `${formName} <${formEmail}>`,
         "Subject": "Thanks for your email!",
         "TextBody": `We have received your email and one of our associates will be in touch soon!\nHere's what you sent:\n\nSubject: ${formSubject}\n\nMessage: ${formMessage}`,
@@ -53,7 +53,7 @@ export default async function handler(request, response) {
         "ReplyTo": `${formName} <${formEmail}>`,
         //"Bcc": 'ryan@forkhunger.art',
         //"To": `hello@noblelabsms.com`,
-        "To": `Jeff@noblelabsms.com`,
+        "To": `hello@noblelabsms.com`,
         "Subject": `${formSubject} [Website Contact Form]`,
         "TextBody": `The following message was submitted\n\nSubject: ${formSubject}\n\nMessage: ${formMessage}`,
         "MessageStream": "outbound"
