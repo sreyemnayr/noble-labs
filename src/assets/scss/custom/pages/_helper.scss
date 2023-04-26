@@ -80,9 +80,20 @@
 /*****************/
 .bg-video-wrapper {
     @apply absolute top-0 ltr:left-0 rtl:right-0 w-full h-full z-0 pointer-events-none overflow-hidden;
-    iframe {
-        @apply absolute top-1/2 ltr:left-1/2 ltr:-translate-x-1/2 rtl:right-1/2 rtl:translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vw];
+
+    video {
+        @apply -z-10 w-screen h-screen object-cover object-center absolute top-0 left-0;
     }
+}
+.bg-video-wrapper-full {
+    @apply absolute top-[28px] lg:top-0 ltr:left-0 rtl:right-0 w-full h-full z-0 pointer-events-none overflow-hidden;
+
+    video {
+        @apply -z-10 w-screen h-[39.06vw] object-contain object-center absolute top-0 left-0;
+    }
+}
+.bg-video-wrapper-section {
+    @apply h-[39.06vw];
 }
 /*****************/
 /*    Switcher   */
