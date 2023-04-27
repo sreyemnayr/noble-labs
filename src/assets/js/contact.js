@@ -36,7 +36,7 @@ function validateForm() {
             document.forms["myForm"]["comments"].value = "";
         }
         if (this.readyState == 4 && this.status == 400) {
-            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*There was an error - please try again or send an email to hello@noblelabsms.com*</div>";
+            document.getElementById('error-msg').innerHTML = "<div class='alert alert-warning error_message'>*There was an error - please try again or send an email to jeff@noblelabsms.com*</div>";
             fadeIn();
         }
     };

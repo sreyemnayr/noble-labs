@@ -21,9 +21,9 @@ export default async function handler(request, response) {
 
       let email_one = {
         "Tag": "SubmissionResponse",
-        "From": "Noble Labs <hello@noblelabsms.com>",
+        "From": "Noble Labs <jeff@noblelabsms.com>",
         //"ReplyTo": `hello@noblelabsms.com`,
-        "ReplyTo": `hello@noblelabsms.com`,
+        "ReplyTo": `jeff@noblelabsms.com`,
         "To": `${formName} <${formEmail}>`,
         "Subject": "Thanks for your email!",
         "TextBody": `We have received your email and one of our associates will be in touch soon!\nHere's what you sent:\n\nSubject: ${formSubject}\n\nMessage: ${formMessage}`,
@@ -49,11 +49,11 @@ export default async function handler(request, response) {
 
       var sent2 = await client.sendEmail({
         "Tag": "FormSubmission",
-        "From": "Noble Labs Website <hello@noblelabsms.com>",
+        "From": "Noble Labs Website <jeff@noblelabsms.com>",
         "ReplyTo": `${formName} <${formEmail}>`,
         //"Bcc": 'ryan@forkhunger.art',
         //"To": `hello@noblelabsms.com`,
-        "To": `hello@noblelabsms.com`,
+        "To": `jeff@noblelabsms.com`,
         "Subject": `${formSubject} [Website Contact Form]`,
         "TextBody": `The following message was submitted\n\nSubject: ${formSubject}\n\nMessage: ${formMessage}`,
         "MessageStream": "outbound"
