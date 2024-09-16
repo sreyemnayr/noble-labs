@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth m-0 p-0 h-full w-full" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Noble Labs Partner Dispensaries</title>
+        <meta name="description" content="Medical marijuana solutions for Mississippi">
+        <meta name="keywords" content="Medical marijuana solutions for Mississippi">
+        <meta name="author" content="Ryan Meyers">
+        <meta name="website" content="https://noblelabsms.com">
+        <meta name="email" content="hello@noblelabsms.com">
+        <meta name="version" content="1.0">
+        <!-- favicon -->
+        <link href="assets/images/favicon.ico" rel="shortcut icon">
+                <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <!-- Main Css -->
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/icons.css">
+        <link rel="stylesheet" href="assets/css/tailwind.css">
+        <style>
+            .tns-inner {
+                height: 100%;
+            }
+            .tns-ovh {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body class="font-rubik text-base text-black dark:text-white dark:bg-slate-900 overflow-hidden h-full w-full m-0 p-0">
+
+
+    <!-- start -->
+        <section class="relative md:py-0 py-0 bg-zinc-50 dark:bg-gray-800 h-full w-full" id="partners">
+            
+                
+                <div class="grid grid-cols-1 m-0 h-full w-full relative">
+                    <div class="tiny-three-item h-full " id="partner-gallery">
+                    </div>
+                    <script>
+                        function shuffleArray(array) {
+                        for (var i = array.length - 1; i >= 0; i--) {
+                            var j = Math.floor(Math.random() * (i + 1));
+                            var temp = array[i];
+                            array[i] = array[j];
+                                array[j] = temp;
+                            }
+                            return array;
+                        }
+                        const gallery_partners = document.getElementById('partner-gallery');
+
+                        const partners = [
+                            {
+                                "n": "420 Bay St. Louis Dispensary",
+                                "a": "200 U.S. 90 Unit B, Waveland, MS 39520, USA",
+                                "w": "https://weedmaps.com/dispensaries/420-bay-st-louis",
+                                "i": "ChIJUbOfVRwtnIgRgtqgkGvUqVg",
+                                "x": "jpg",
+                                "lt": "30.3085875",
+                                "ln": "-89.3724457"
+                            },
+                            {
+                                "n": "AMG Gold Dispensary",
+                                "a": "1887 Pass Road, Biloxi, MS 39531-4215, USA",
+                                "w": "http://www.amggold.com/",
+                                "i": "ChIJp8CC8CYRnIgRTQ-B72HCcbw",
+                                "x": "png",
+                                "lt": "30.4030036",
+                                "ln": "-88.9504595"
+                            },
+                            {
+                                "n": "Angel Leaf Dispensary",
+                                "a": "9 Roux 61 Drive, Natchez, MS 39120-2176, USA",
+                                "w": "https://www.leafly.com/dispensary-info/angel-leaf-cannabis-dispensary",
+                                "i": "ChIJ9_x1B6zxJYYRISstgLHWQzc",
+                                "x": "jpg",
+                                "lt": "31.493291",
+                                "ln": "-91.3661241"
+                            },
+                            {
+                                "n": "Apothecarium Green Medical Cannabis Dispensary",
+                                "a": "1920 Highway 45 North, Columbus, MS 39705-1923, USA",
+                                "w": "https://weedmaps.com/dispensaries/apothecarium-green",
+                                "i": "ChIJx3dvXULphogRIVhglavg61E",
+                                "x": "png",
+                                "lt": "33.5201723",
+                                "ln": "-88.4345578"
+                            },
+                            {
+                                "n": "Arcane Enterprises",
+                                "a": "4241 U.S. 49 West Suite A, Drew, MS 39194, USA",
+                                "w": "http://www.arcanemd.com/",
+                                "i": "ChIJ_SBAlB3nKoYR-BmUk4IIHAU",
+                                "x": "jpg",
+                                "lt": "32.7292096",
+                                "ln": "-90.3729535"
+                            },
+                            {
+                                "n": "Bee's Buds",
+                                "a": "14313 Stenum Street, Biloxi, MS 39532-8915, USA",
+                                "w": "http://beesbudsdispensary.com/",
+                                "i": "ChIJeSlM94cLnIgRa-Qwr05BI3M",
+                                "x": "png",
+                                "lt": "30.4531164",
+                                "ln": "-88.8493718"
+                            },
+                            {
+                                "n": "BEST BUDS+",
+                                "a": "125 Veterans Memorial Drive, Kosciusko, MS 39090, USA",
+                                "w": "https://weedmaps.com/dispensaries/dispensary-plus-2",
+                                "i": "ChIJX5WuKAAngogR2A8PAbjGJMU",
+                                "x": "jpg",
+                                "lt": "33.0584778",
+                                "ln": "-89.5706853"
+                            },
+                            {
+                                "n": "Noble Labs & Dispensary",
+                                "a": "241 Old Highway 98 East, Tylertown, MS 39667-7620, USA",
+                                "w": "http://www.noblelabsms.com/",
+                                "i": "ChIJRUAwvJ6PJ4YRe-aeNW47qMQ",
+                                "x": "svg",
+                                "lt": "31.1246794",
+                                "ln": "-90.1050861"
+                            },
+                            {
+                                "n": "Bloom Medical Cannabis",
+                                "a": "110 North Jerry Clower Boulevard North u, Yazoo City, MS 39194-8669, USA",
+                                "w": "http://www.bloomcannabisms.com/",
+                                "i": "ChIJh3EMe46RKYYRKnFzEK6DYHM",
+                                "x": "jpg",
+                                "lt": "32.8406494",
+                                "ln": "-90.3860698"
+                            },
+                            {
+                                "n": "Bragg Canna (Pearl)",
+                                "a": "190 Riverwind East Drive East, Pearl, MS 39208-3387, USA",
+                                "w": "https://ms.braggcanna.com/mississippi-medical-cannabis-dispensaries/pearl/",
+                                "i": "ChIJI1CKbMgtKIYRZpHtWR5Kii0",
+                                "x": "svg",
+                                "lt": "32.2686383",
+                                "ln": "-90.1313402"
+                            },
+                            {
+                                "n": "Bragg Canna (Tupelo)",
+                                "a": "1167 South Green Street, Tupelo, MS 38804-4909, USA",
+                                "w": "https://ms.braggcanna.com/mississippi-medical-cannabis-dispensaries/tupelo/",
+                                "i": "ChIJl-Xo9j1Ph4gRm8FVPXRaqD4",
+                                "x": "svg",
+                                "lt": "34.2408981",
+                                "ln": "-88.7103109"
+                            },
+                            {
+                                "n": "Bud Barn Retail Dispensary",
+                                "a": "15171 Lamey Bridge Road, Biloxi, MS 39532-8971, USA",
+                                "w": "http://www.msbudbarn.com/",
+                                "i": "ChIJsdlRhUwNnIgRuZhPHlXhA6o",
+                                "x": "jpg",
+                                "lt": "30.502607",
+                                "ln": "-88.9237341"
+                            },
+                            {
+                                "n": "Canna Midori WELLNESS DISPENSARY",
+                                "a": "8990 Mississippi 19 North, Collinsville, MS 39325-9402, USA",
+                                "w": "https://www.cannamidori.com/",
+                                "i": "ChIJH259I1yGg4gRtVMGOQbBvMI",
+                                "x": "png",
+                                "lt": "32.4929767",
+                                "ln": "-88.8421256"
+                            },
+                            {
+                                "n": "Cannabis Headquarters",
+                                "a": "608 North Gloster Street, Tupelo, MS 38804-1945, USA",
+                                "w": "https://cannabisheadquarter.com/",
+                                "i": "ChIJB_j6SSZNh4gRae1pH3YX4Nk",
+                                "x": "jpg",
+                                "lt": "34.2653843",
+                                "ln": "-88.7152978"
+                            },
+                            {
+                                "n": "CannaCare Dispensary",
+                                "a": "111 South Industrial Road, Tupelo, MS 38801-4666, USA",
+                                "w": "https://www.instagram.com/cannacaretupleo/",
+                                "i": "ChIJtbpwhrpNh4gRS3QA0rZPIm4",
+                                "x": "png",
+                                "lt": "34.2556691",
+                                "ln": "-88.7196793"
+                            },
+                            {
+                                "n": "ReLeaf by CannaMiss",
+                                "a": "1130 North Lamar Boulevard, Oxford, MS 38655-2844, USA",
+                                "w": "https://www.leafly.com/dispensary-info/releaf-dispensary-e0756",
+                                "i": "ChIJyxv1Hqt7gIgRRoYOdAr5Oas",
+                                "x": "png",
+                                "lt": "34.3774243",
+                                "ln": "-89.5106127"
+                            },
+                            {
+                                "n": "CANNA+U Dispensary",
+                                "a": "4405 East Aloha Drive, Diamondhead, MS 39525-3380, USA",
+                                "w": "https://cannau.com/",
+                                "i": "ChIJy56CWiAznIgRmX4M-Nz9yi4",
+                                "x": "svg",
+                                "lt": "30.3760692",
+                                "ln": "-89.3688603"
+                            },
+                            {
+                                "n": "City Dispensary,LLC",
+                                "a": "830d City Avenue South, Ripley, MS 38663-2940, USA",
+                                "w": "https://www.leafly.com/dispensary-info/city-dispensary-llc",
+                                "i": "ChIJEWQG6a4RfogRtQqTebIGOj8",
+                                "x": "jpg",
+                                "lt": "34.7218905",
+                                "ln": "-88.9527803"
+                            },
+                            {
+                                "n": "Cleveland Cannabis Company",
+                                "a": "3620 U.S. Hwy 61N Suite 1, Cleveland, MS 38732-2114, USA",
+                                "w": "https://weedmaps.com/dispensaries/cleveland-cannabis-comapnay",
+                                "i": "ChIJ52HEULWpK4YRFe84n4m5xOQ",
+                                "x": "png",
+                                "lt": "33.7440023",
+                                "ln": "-90.7248187"
+                            },
+                            {
+                                "n": "Coast Cannabis Medical Dispensary",
+                                "a": "835 U.S. 90 Suite 6, Bay St. Louis, MS 39520-1607, USA",
+                                "w": "http://www.coastcannabisms.com/",
+                                "i": "ChIJsfzO6BgtnIgRJ5_122XM4WM",
+                                "x": "jpg",
+                                "lt": "30.3152469",
+                                "ln": "-89.3531124"
+                            },
+                            {
+                                "n": "Coast Dispensary",
+                                "a": "913 Division Street, Biloxi, MS 39530-3001, USA",
+                                "w": "http://www.facebook.com/profile.php?id=100088552206339",
+                                "i": "ChIJtde687wPnIgRCZaZDJoNjoE",
+                                "x": "jpg",
+                                "lt": "30.4026043",
+                                "ln": "-88.8934353"
+                            },
+                            {
+                                "n": "Canna Midori WELLNESS DISPENSARY",
+                                "a": "5651 Wild Oak Road, Bailey, MS 39320-9000, USA",
+                                "w": "https://www.cannamidori.com/",
+                                "i": "ChIJH259I1yGg4gRtVMGOQbBvMI",
+                                "x": "png",
+                                "lt": "32.562889",
+                                "ln": "-88.7350419"
+                            },
+                            {
+                                "n": "Corinth Cannabis",
+                                "a": "1507 U.S. 72 East, Corinth, MS 38834-6527, USA",
+                                "w": "http://www.corinthcannabis.com/",
+                                "i": "ChIJzblysRnBfYgRz_LFmwD7k7w",
+                                "x": "png",
+                                "lt": "34.9175307",
+                                "ln": "-88.5075073"
+                            },
+                            {
+                                "n": "Good Day Farm Dispensary Corinth",
+                                "a": "2609 U.S. 72 West, Corinth, MS 38834-5939, USA",
+                                "w": "https://gooddayfarmdispensary.com/good-day-farm-corinth/",
+                                "i": "ChIJC5ITrmHBfYgRO5-hk0aw5zQ",
+                                "x": "webp",
+                                "lt": "34.9304951",
+                                "ln": "-88.5499338"
+                            },
+                            {
+                                "n": "Cox-Blythe Dispensary",
+                                "a": "106 Ridgemont Villa, Booneville, MS 38829-1036, USA",
+                                "w": "https://www.leafly.com/dispensary-info/cox-blythe-dispensary",
+                                "i": "ChIJtxj-AQDvfYgRm6bBIjq3OiE",
+                                "x": "jpg",
+                                "lt": "34.6776327",
+                                "ln": "-88.5605488"
+                            },
+                            {
+                                "n": "Cream Cannabis Company",
+                                "a": "102 Metroplex Boulevard B, Pearl, MS 39208-9202, USA",
+                                "w": "https://creamdispo.com/",
+                                "i": "ChIJaTlJj_MrKIYRNWP5_Owrl-0",
+                                "x": "png",
+                                "lt": "32.2859122",
+                                "ln": "-90.0599722"
+                            },
+                            {
+                                "n": "Cultiva Rx Cannabis Dispensary",
+                                "a": "1608 Bienville Boulevard, Ocean Springs, MS 39564-3023, USA",
+                                "w": "https://cultivarx.us/",
+                                "i": "ChIJ1c4YYYYJnIgRgv8QObTbCGM",
+                                "x": "jpg",
+                                "lt": "30.4157369",
+                                "ln": "-88.8152589"
+                            },
+                            {
+                                "n": "Cultivated Wellness Dispensary #1",
+                                "a": "794 East Main Street, Tupelo, MS 38804-2824, USA",
+                                "w": "https://cultivatedwellnessdispensary.com/",
+                                "i": "ChIJg581xCNPh4gRGgjAlZqU--w",
+                                "x": "jpg",
+                                "lt": "34.2569777",
+                                "ln": "-88.687045"
+                            },
+                            {
+                                "n": "cultivated wellness dispensary #2",
+                                "a": "6690 U.S. 98, Hattiesburg, MS 39402-7936, USA",
+                                "w": "https://cultivatedwellnessdispensary.com/",
+                                "i": "ChIJ3coLdFkhnYgRQkMeimWNPio",
+                                "x": "jpg",
+                                "lt": "31.315914",
+                                "ln": "-89.4310969"
+                            },
+                            {
+                                "n": "Cultivated Wellness Dispensary No. 3",
+                                "a": "12407 U.S. 49, Gulfport, MS 39503-4091, USA",
+                                "w": "https://cultivatedwellnessdispensary.com/",
+                                "i": "ChIJc1s_sxQ_nIgRS-ZBGyFG4tU",
+                                "x": "jpg",
+                                "lt": "30.4680672",
+                                "ln": "-89.1030585"
+                            },
+                            {
+                                "n": "Culture Cannabis Biloxi",
+                                "a": "2572 Pass Road, Biloxi, MS 39531-2726, USA",
+                                "w": "https://weedmaps.com/dispensaries/culture-biloxi-shop",
+                                "i": "ChIJFeoVkA4RnIgRjvw5XKs6IwI",
+                                "x": "jpg",
+                                "lt": "30.4012434",
+                                "ln": "-88.9872144"
+                            },
+                            {
+                                "n": "D&S Best Friends Dispensary",
+                                "a": "3405 South Frontage Road, Columbus, MS 39701-8403, USA",
+                                "w": "https://dsdispensary.us/",
+                                "i": "ChIJF_R0krTBhogRKEDy2cYJPWc",
+                                "x": "png",
+                                "lt": "33.4783972",
+                                "ln": "-88.5476219"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "1282 Beaver Dam Road, Lucedale, MS 39452, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJv8gA14x3m4gRJQTfn55H9EQ",
+                                "x": "svg",
+                                "lt": "30.9518798",
+                                "ln": "-88.5966858"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "1024 West Beacon Street, Philadelphia, MS 39350-3204, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJ6Usugn7Bg4gRF6qWLXgekLQ",
+                                "x": "svg",
+                                "lt": "32.7687491",
+                                "ln": "-89.1308258"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "1667 Simpson Hwy 49, Magee, MS 39111-4291, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJb0SUINi5gogREZgnMZLrpS4",
+                                "x": "svg",
+                                "lt": "31.8685127",
+                                "ln": "-89.7427419"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "228 North Woodland Drive, Forest, MS 39074-3308, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJfTeUP65NgogRUamQwW8ZxKk",
+                                "x": "svg",
+                                "lt": "32.376136",
+                                "ln": "-89.47287"
+                            },
+                            {
+                                "n": "Dank Box Medical Cannabis Dispensary",
+                                "a": "5852 Ridgewood Road, Jackson, MS 39211-2617, USA",
+                                "w": "http://dankboxdispensary.com/",
+                                "i": "ChIJpzgm3GjTKYYRMfuwo7kWVG8",
+                                "x": "png",
+                                "lt": "32.3879011",
+                                "ln": "-90.1414375"
+                            },
+                            {
+                                "n": "Danknolia Cannabis Dispensary",
+                                "a": "3188 West Northside Drive, Jackson, MS 39213-4516, USA",
+                                "w": "http://danknoliams.com/",
+                                "i": "ChIJx85Wn1TLKYYRsoN_yZcX5KQ",
+                                "x": "png",
+                                "lt": "32.357481",
+                                "ln": "-90.2295962"
+                            },
+                            {
+                                "n": "Danknolia Cannabis Dispensary LLC",
+                                "a": "5225 Highway 18 West, Jackson, MS 39209-9420, USA",
+                                "w": "https://danknoliams.com/",
+                                "i": "ChIJ7WgGwPo1KIYR4bTh6DduOCg",
+                                "x": "png",
+                                "lt": "32.2897095",
+                                "ln": "-90.2713394"
+                            },
+                            {
+                                "n": "Danknolia Cannabis Dispensary",
+                                "a": "1335 ELLIS AVE, Jackson, MS 39204-2235, USA",
+                                "w": "http://danknoliams.com/",
+                                "i": "ChIJhVQnFcM1KIYRhfJqn5hMsts",
+                                "x": "png",
+                                "lt": "32.2821952",
+                                "ln": "-90.2291565"
+                            },
+                            {
+                                "n": "Delta dispensary magnolia",
+                                "a": "319 East Bay Street STE C, Magnolia, MS 39652-2815, USA",
+                                "w": "https://deltadispensarymagnolia.com/store/",
+                                "i": "ChIJUTChWSaxJ4YRwXU90p5MlWs",
+                                "x": "jpg",
+                                "lt": "31.1433254",
+                                "ln": "-90.4574988"
+                            },
+                            {
+                                "n": "Delta Dispensary Summit",
+                                "a": "1117 Highway 51 North, Summit, MS 39666, USA",
+                                "w": "https://deltadispensaryms.com/",
+                                "i": "ChIJLw6_pGDJJ4YRTS0It7z8YgM",
+                                "x": "jpg",
+                                "lt": "31.2713941",
+                                "ln": "-90.4722099"
+                            },
+                            {
+                                "n": "Diamond Leaf Medical Dispensary",
+                                "a": "445 Yacht Club Drive, Diamondhead, MS 39525-3125, USA",
+                                "w": "http://diamondleafms.com/",
+                                "i": "ChIJ5XFMPDMznIgRSon0Fr7KL6k",
+                                "x": "png",
+                                "lt": "30.3696656",
+                                "ln": "-89.3764923"
+                            },
+                            {
+                                "n": "Dispensary plus",
+                                "a": "1212 Jerry Clower Boulevard North, Yazoo City, MS 39194-3077, USA",
+                                "w": "https://www.leafly.com/dispensary-info/dispensary-plus",
+                                "i": "ChIJP7VaNPWRKYYRZu4zi39D1OY",
+                                "x": "png",
+                                "lt": "32.8600384",
+                                "ln": "-90.3915051"
+                            },
+                            {
+                                "n": "Dixon Dispensary",
+                                "a": "11370 U.S. 49 g, Gulfport, MS 39503-3179, USA",
+                                "w": "https://cannmenus.com/dispensaries/mississippi/gulfport/5d75e4bc/dixon-dispensary-gulfport",
+                                "i": "ChIJc6Bmees_nIgRkH2BToZMs-4",
+                                "x": "jpg",
+                                "lt": "30.4520629",
+                                "ln": "-89.0980143"
+                            },
+                            {
+                                "n": "Dolphin Dayz Dispensary",
+                                "a": "3300 Ladnier Road, Gautier, MS 39553-5909, USA",
+                                "w": "http://dolphindayzcom.wordpress.com/",
+                                "i": "ChIJh7OKUDvxm4gReV6OO_xtYiY",
+                                "x": "png",
+                                "lt": "30.3885871",
+                                "ln": "-88.6460352"
+                            },
+                            {
+                                "n": "Evergreen Dispensary",
+                                "a": "13170 Highway 6 West, Batesville, MS 38606-6804, USA",
+                                "w": "http://www.evergreendispensary.net/",
+                                "i": "ChIJAcso0dgdgIgRaG0iqksaz3w",
+                                "x": "jpg",
+                                "lt": "34.2894578",
+                                "ln": "-90.1062991"
+                            },
+                            {
+                                "n": "FerrCannabis Dispensary",
+                                "a": "6152 U.S. 98 #20, Hattiesburg, MS 39402-4200, USA",
+                                "w": "http://www.ferrcann.com/",
+                                "i": "ChIJB9fcKJ7fnIgRM3-1WmvNT-U",
+                                "x": "png",
+                                "lt": "31.3202643",
+                                "ln": "-89.3858748"
+                            },
+                            {
+                                "n": "Firefly Cannabis",
+                                "a": "6911 Washington Avenue, Ocean Springs, MS 39564-2132, USA",
+                                "w": "https://www.leafly.com/dispensary-info/firefly-cannabis",
+                                "i": "ChIJVyzsOqkLnIgRcqNOBpeP5hw",
+                                "x": "png",
+                                "lt": "30.4420947",
+                                "ln": "-88.838266"
+                            },
+                            {
+                                "n": "Five Star Medical Dispensary",
+                                "a": "409 Norfleet Drive, Senatobia, MS 38668-2299, USA",
+                                "w": "https://www.leafly.com/dispensary-info/five-star-medical-company",
+                                "i": "ChIJWwZkHlD5f4gRtObsY0h-SK4",
+                                "x": "jpg",
+                                "lt": "34.6265677",
+                                "ln": "-89.9540371"
+                            },
+                            {
+                                "n": "Geaux Green Medical Dispensary",
+                                "a": "295 U.S. 90, Bay St. Louis, MS 39520-3600, USA",
+                                "w": "https://www.geauxgreenms.com/",
+                                "i": "ChIJ45Nwf6otnIgRnHXJ9c-5xxg",
+                                "x": "png",
+                                "lt": "30.3216026",
+                                "ln": "-89.3358135"
+                            },
+                            {
+                                "n": "Good Day Dispensary",
+                                "a": "450 U.S. Highway 51 South, Batesville, MS 38606-2502, USA",
+                                "w": "https://gooddaydispensary.com/",
+                                "i": "ChIJvUW0kewcgIgRzMQHZFlMYi4",
+                                "x": "jpg",
+                                "lt": "34.3023695",
+                                "ln": "-89.9456836"
+                            },
+                            {
+                                "n": "Good Vibes",
+                                "a": "1536 West Peace Street, Canton, MS 39046-5325, USA",
+                                "w": "http://goodvibescanton.com/",
+                                "i": "ChIJe_LaOPjZKYYRvkyi2CE3Xg4",
+                                "x": "png",
+                                "lt": "32.6058444",
+                                "ln": "-90.0718851"
+                            },
+                            {
+                                "n": "Green Akers Cannabis Dispensary",
+                                "a": "1409 Battleground Drive, Iuka, MS 38852-1044, USA",
+                                "w": "https://www.leafly.com/dispensary-info/green-akers-dispensary",
+                                "i": "ChIJq5ExokeffYgRiJXYxmPlr6Y",
+                                "x": "jpg",
+                                "lt": "34.8019127",
+                                "ln": "-88.203752"
+                            },
+                            {
+                                "n": "Green Magnolia",
+                                "a": "3142 South Liberty Street, Canton, MS 39046-9226, USA",
+                                "w": "https://gmagnolia.com/",
+                                "i": "ChIJmUEKd9fZKYYRRJBKrRQpi58",
+                                "x": "png",
+                                "lt": "32.5985666",
+                                "ln": "-90.0354418"
+                            },
+                            {
+                                "n": "Green Magnolia",
+                                "a": "7432 Highway 45 North, Columbus, MS 39705-3127, USA",
+                                "w": "https://gmagnolia.com/",
+                                "i": "ChIJ4zsk5pjohogR0qAOZZYLS9M",
+                                "x": "png",
+                                "lt": "33.6003868",
+                                "ln": "-88.4228362"
+                            },
+                            {
+                                "n": "Green Magnolia Dispensary of Meridian",
+                                "a": "4818 North Park Drive, Meridian, MS 39305-2654, USA",
+                                "w": "https://www.gmagnolia.com/",
+                                "i": "ChIJ5zvnQaZ9hIgRRO8bzYE_vG4",
+                                "x": "png",
+                                "lt": "32.4081439",
+                                "ln": "-88.7027891"
+                            },
+                            {
+                                "n": "Green Magnolia Dispensary Tupelo",
+                                "a": "3437 Tupelo Commons Drive, Tupelo, MS 38804-9791, USA",
+                                "w": "http://gmagnolia.com/",
+                                "i": "ChIJ1RD-W09Ph4gR0QEMo6Bmrpo",
+                                "x": "png",
+                                "lt": "34.2999621",
+                                "ln": "-88.7062857"
+                            },
+                            {
+                                "n": "Green Spark Dispensary",
+                                "a": "111 South Main Street, Water Valley, MS 38965-2510, USA",
+                                "w": "https://www.leafly.com/dispensary-info/green-spark-dispensary/menu",
+                                "i": "ChIJKy4lBpJBgIgRwxn2SNqdqAY",
+                                "x": "jpg",
+                                "lt": "34.1490292",
+                                "ln": "-89.6326875"
+                            },
+                            {
+                                "n": "Green Star Dispensary",
+                                "a": "9696 Mississippi 306, Coldwater, MS 38618, USA",
+                                "w": "https://thegreenstardispensary.com/",
+                                "i": "ChIJ_5oMW07vf4gRBVXVOt1PcO4",
+                                "x": "png",
+                                "lt": "34.6994335",
+                                "ln": "-89.8117337"
+                            },
+                            {
+                                "n": "Green Therapy Dispensary",
+                                "a": "5004 Lincoln Road Extension Ste 80, Hattiesburg, MS 39402-8111, USA",
+                                "w": "http://www.greentherapydispensary.com/",
+                                "i": "ChIJJ-5IzWPfnIgRBOPbfZlZPds",
+                                "x": "jpg",
+                                "lt": "31.3016789",
+                                "ln": "-89.3775479"
+                            },
+                            {
+                                "n": "Green Tree Wellness Premium Cannabis Dispensary",
+                                "a": "3046 Indiana Avenue, Vicksburg, MS 39180-5252, USA",
+                                "w": "http://weedmaps.com/dispensaries/big-river",
+                                "i": "ChIJcUOdCgfhKIYR6z6meDfdGgA",
+                                "x": "png",
+                                "lt": "32.3291493",
+                                "ln": "-90.864609"
+                            },
+                            {
+                                "n": "Greenwise Cannabis Company",
+                                "a": "9113 U.S. 49, Gulfport, MS 39503-4301, USA",
+                                "w": "https://cannmenus.com/dispensaries/mississippi/gulfport/3acf65ce/greenwise-cannabis-company-gulfport",
+                                "i": "ChIJWQ0PD-0XnIgRGhql7H-eElc",
+                                "x": "webp",
+                                "lt": "30.4155744",
+                                "ln": "-89.0937857"
+                            },
+                            {
+                                "n": "Southern Sky Wellness",
+                                "a": "823 Mississippi 12 West, Starkville, MS 39759, USA",
+                                "w": "http://www.southernskywellness.com/",
+                                "i": "ChIJo0jAqcI1gYgRFJvGkFv9mnA",
+                                "x": "png",
+                                "lt": "33.4463743",
+                                "ln": "-88.8422788"
+                            },
+                            {
+                                "n": "GreenWise Cannabis Company",
+                                "a": "715 Garfield Street, Tupelo, MS 38801-6339, USA",
+                                "w": "https://southernskywellness.com/",
+                                "i": "ChIJw4w-z-tNh4gRQrzjfrDMbXo",
+                                "x": "webp",
+                                "lt": "34.2405268",
+                                "ln": "-88.7168334"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "736 U.S. 49, Richland, MS 39218-9444, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJKeamczsxKIYRdMCew_5BBUo",
+                                "x": "svg",
+                                "lt": "32.2310614",
+                                "ln": "-90.1606012"
+                            },
+                            {
+                                "n": "Herbal Alchemy LLC",
+                                "a": "3016 Highway 51 South, Hernando, MS 38632-2722, USA",
+                                "w": "http://www.herbalalchemyllc.org/",
+                                "i": "ChIJT6FVzSP1f4gRBoH--t1D1bw",
+                                "x": "png",
+                                "lt": "34.8164144",
+                                "ln": "-89.9932616"
+                            },
+                            {
+                                "n": "High Hopes",
+                                "a": "1201 North Gloster Street E & F, Tupelo, MS 38804-1213, USA",
+                                "w": "http://highhopesms.com/",
+                                "i": "ChIJy7v4ulNNh4gRgUS86k2ZKs8",
+                                "x": "png",
+                                "lt": "34.2800196",
+                                "ln": "-88.7163224"
+                            },
+                            {
+                                "n": "High Tide Cannabis Co",
+                                "a": "17015 Mississippi 63, Moss Point, MS 39562-8505, USA",
+                                "w": "https://www.hightidecannabisco.com/",
+                                "i": "ChIJq0XiiLiTm4gRguDZHObbACk",
+                                "x": "jpg",
+                                "lt": "30.5901099",
+                                "ln": "-88.5626092"
+                            },
+                            {
+                                "n": "House of Buds",
+                                "a": "521 5th Street Southwest, Magee, MS 39111-3948, USA",
+                                "w": "http://www.houseofbudsms.com/",
+                                "i": "ChIJTwvMFSi5gogRFtw9D259d7A",
+                                "x": "png",
+                                "lt": "31.8686542",
+                                "ln": "-89.7381236"
+                            },
+                            {
+                                "n": "Hybrid CBD",
+                                "a": "1801 Jackson Avenue West Suite 112 D, Oxford, MS 38655-4464, USA",
+                                "w": "https://hybridcbdms.com/",
+                                "i": "ChIJ32Aw7y5xgIgRskEALyXmUnU",
+                                "x": "png",
+                                "lt": "34.3653462",
+                                "ln": "-89.5543774"
+                            },
+                            {
+                                "n": "Kelly's Green",
+                                "a": "1170 Old Fannin Road, Brandon, MS 39047-9262, USA",
+                                "w": "https://kellysgreen.com/",
+                                "i": "ChIJT_QiEvXVKYYRLunSBGqYKFM",
+                                "x": "png",
+                                "lt": "32.3785331",
+                                "ln": "-90.0440846"
+                            },
+                            {
+                                "n": "Kelly's Green",
+                                "a": "20 Rawls Springs Loop Road, Hattiesburg, MS 39402-7801, USA",
+                                "w": "https://kellysgreen.com/",
+                                "i": "ChIJ4fzcu9XZnIgRqBw_F4dzV3Y",
+                                "x": "png",
+                                "lt": "31.3602757",
+                                "ln": "-89.3481225"
+                            },
+                            {
+                                "n": "Kudzu Cannabis",
+                                "a": "4678 Interstate 55 North Frontage Road, Jackson, MS 39211-5501, USA",
+                                "w": "https://kudzucc.com/contact-us/",
+                                "i": "ChIJBwCzElXNKYYRfWh6OXsz_SQ",
+                                "x": "png",
+                                "lt": "32.3580751",
+                                "ln": "-90.1506782"
+                            },
+                            {
+                                "n": "Kush Vibez Medical Cannabis dispensary",
+                                "a": "5440 Interstate 55 North Frontage Road, Jackson, MS 39211, USA",
+                                "w": "http://kushvibez.com/",
+                                "i": "ChIJJV_hwgDTKYYRnM5RAjjn8bQ",
+                                "x": "webp",
+                                "lt": "32.3765989",
+                                "ln": "-90.1472171"
+                            },
+                            {
+                                "n": "LeafMed \u2013 Medical Marijuana Dispensary Bay St. Louis",
+                                "a": "10209 Mississippi 603, Bay St. Louis, MS 39520-8711, USA",
+                                "w": "https://content.leafmed.com/locations/bay-st-louis-ms/",
+                                "i": "ChIJFZlOeSvTnYgRxp2tsTCP7yw",
+                                "x": "svg",
+                                "lt": "30.3134758",
+                                "ln": "-89.3994389"
+                            },
+                            {
+                                "n": "LeafMed \u2013 Medical Marijuana Dispensary Vicksburg",
+                                "a": "2080 South Frontage Road, Vicksburg, MS 39180-5328, USA",
+                                "w": "https://content.leafmed.com/vicksburg-ms/",
+                                "i": "ChIJO-DkribhKIYR1SFR5_vZXyo",
+                                "x": "svg",
+                                "lt": "32.3218787",
+                                "ln": "-90.8658727"
+                            },
+                            {
+                                "n": "Legally Rooted Cannabis Dispensary, LLC",
+                                "a": "1800 6th Street, Meridian, MS 39301-5250, USA",
+                                "w": "http://www.legallyrootedcannabis.com/",
+                                "i": "ChIJXVc0pI99hIgRQnQXgfYXnzE",
+                                "x": "jpg",
+                                "lt": "32.3667336",
+                                "ln": "-88.6970497"
+                            },
+                            {
+                                "n": "Long Beach Dispensary",
+                                "a": "520 East Railroad Street, Long Beach, MS 39560-4917, USA",
+                                "w": "https://weedmaps.com/dispensaries/long-beach-dispensary",
+                                "i": "ChIJJSD0TVA9nIgRwIGzUjerHZA",
+                                "x": "jpg",
+                                "lt": "30.3544864",
+                                "ln": "-89.1413199"
+                            },
+                            {
+                                "n": "Love's Harvest Medical Cannabis Dispensary",
+                                "a": "601 South Railroad Boulevard, McComb, MS 39648-5116, USA",
+                                "w": "https://lovesharvest.com/",
+                                "i": "ChIJp2KgYaS3J4YRxPh5J-x9kVQ",
+                                "x": "png",
+                                "lt": "31.2371134",
+                                "ln": "-90.4505699"
+                            },
+                            {
+                                "n": "Far &amp; Dotter",
+                                "a": "8101 Hacks Cross Road STE 100, Olive Branch, MS 38654-4032, USA",
+                                "w": "https://fardotter.com/dispensaries/olive-branch-ms/",
+                                "i": "ChIJcY4okJWRf4gR_HBOIukJf-o",
+                                "x": "svg",
+                                "lt": "34.9777913",
+                                "ln": "-89.7958274"
+                            },
+                            {
+                                "n": "Magnolia Cannabis Dispensary",
+                                "a": "618 GAINES HWY, Boyle, MS 38730-9507, USA",
+                                "w": "http://www.magnoliacannabisdispensary.com/",
+                                "i": "ChIJ2wKMwU_5JYYRDZ9aprb4814",
+                                "x": "png",
+                                "lt": "33.7115812",
+                                "ln": "-90.7180044"
+                            },
+                            {
+                                "n": "Green Tree Wellness Premium Cannabis Dispensary",
+                                "a": "3046 Indiana Avenue, Vicksburg, MS 39180-5252, USA",
+                                "w": "http://weedmaps.com/dispensaries/big-river",
+                                "i": "ChIJcUOdCgfhKIYR6z6meDfdGgA",
+                                "x": "png",
+                                "lt": "32.3291493",
+                                "ln": "-90.864609"
+                            },
+                            {
+                                "n": "Magnolia Green Dispensary",
+                                "a": "940 U.S. 90, Waveland, MS 39576-2312, USA",
+                                "w": "https://www.magnoliagreen.org/products/",
+                                "i": "ChIJGTqU1j8tnIgREqsLs2NrTok",
+                                "x": "png",
+                                "lt": "30.2993522",
+                                "ln": "-89.4027617"
+                            },
+                            {
+                                "n": "Magnolia Greens Dispensary",
+                                "a": "101 Whitebrook Drive, Brookhaven, MS 39601-3367, USA",
+                                "w": "https://magnoliagreensdispensary.com/",
+                                "i": "ChIJ0aCLyaPXJ4YR5SAPXfooRoA",
+                                "x": "png",
+                                "lt": "31.5754049",
+                                "ln": "-90.4573324"
+                            },
+                            {
+                                "n": "Magnolia Cannabis Dispensary",
+                                "a": "2570 Jackson Avenue West Suite 18, Oxford, MS 38655-2932, USA",
+                                "w": "http://www.magnolia-cannabis.com/",
+                                "i": "ChIJxcKIirRxgIgRc2uZ_ix2DXA",
+                                "x": "png",
+                                "lt": "34.3603972",
+                                "ln": "-89.5672535"
+                            },
+                            {
+                                "n": "Mary Jane & Herb's",
+                                "a": "135 Thornhill Drive, Hattiesburg, MS 39402, USA",
+                                "w": "https://maryjaneandherbs.com/",
+                                "i": "ChIJvTxcCmTfnIgRE7ZLG7OFSZw",
+                                "x": "svg",
+                                "lt": "31.3266409",
+                                "ln": "-89.3508099"
+                            },
+                            // {
+                            //     "n": "????",
+                            //     "a": "120 Christopher Lane, Nesbit, MS 38651-9496, USA",
+                            //     "w": "",
+                            //     "i": "",
+                            //     "x": "",
+                            //     "lt": "34.8975124",
+                            //     "ln": "-89.992395"
+                            // },
+                            {
+                                "n": "MedCan of Mississippi",
+                                "a": "717 North Davis Avenue, Cleveland, MS 38732-2101, USA",
+                                "w": "https://weedmaps.com/dispensaries/med-canms",
+                                "i": "ChIJKzR61oCpK4YRbYbdem3ekwA",
+                                "x": "png",
+                                "lt": "33.7574492",
+                                "ln": "-90.71631"
+                            },
+                            {
+                                "n": "Good Day Farm Dispensary Brookhaven (Closed)",
+                                "a": "106 Stribling Road, Brookhaven, MS 39601-7011, USA",
+                                "w": "https://gooddayfarmdispensary.com/good-day-farm-brookhaven/",
+                                "i": "ChIJsXrKUAjXJ4YRqWJSzHXjaJM",
+                                "x": "jpg",
+                                "lt": "31.5793272",
+                                "ln": "-90.4767425"
+                            },
+                            {
+                                "n": "Mississippi Magnolia Canna",
+                                "a": "17 Airport Road, West Point, MS 39773-4120, USA",
+                                "w": "http://mississippimagnoliacannabis.com/",
+                                "i": "ChIJq3v8VJfPhogR_FL9YxBbZbU",
+                                "x": "jpg",
+                                "lt": "33.5846417",
+                                "ln": "-88.6595678"
+                            },
+                            {
+                                "n": "Mississippi Magnolia Canna",
+                                "a": "1223 Highway 45 North, Columbus, MS 39705-2138, USA",
+                                "w": "http://mississippimagnoliacannabis.com/",
+                                "i": "ChIJ8ed5Y0jrhogRh54m6M0jduM",
+                                "x": "jpg",
+                                "lt": "33.509662",
+                                "ln": "-88.433836"
+                            },
+                            {
+                                "n": "Nature Med Dispensary",
+                                "a": "6401 U.S. 49, Hattiesburg, MS 39401-3105, USA",
+                                "w": "https://naturemedms.com/",
+                                "i": "ChIJRZrateTfnIgRANQBnenaqRg",
+                                "x": "png",
+                                "lt": "31.3433781",
+                                "ln": "-89.3302166"
+                            },
+                            {
+                                "n": "420 Medical Clinic",
+                                "a": "500 East Woodrow Wilson Avenue K, Jackson, MS 39216-4538, USA",
+                                "w": "https://m.facebook.com/people/420-Medical-Clinic/100084945274793/",
+                                "i": "ChIJo5dmpS8zKIYRgNsH9HUCt9c",
+                                "x": "jpg",
+                                "lt": "32.3277308",
+                                "ln": "-90.1787157"
+                            },
+                            {
+                                "n": "Pine Belt Medicinal",
+                                "a": "3702 Hardy Street STE 2, Hattiesburg, MS 39402-1579, USA",
+                                "w": "https://pinebeltmedicinal.com/contact-us",
+                                "i": "ChIJq6omguvenIgRAs72DTVh_sM",
+                                "x": "png",
+                                "lt": "31.3242814",
+                                "ln": "-89.3441305"
+                            },
+                            {
+                                "n": "River Remedy",
+                                "a": "5925 I-55 South Frontage Road, Byram, MS 39272, USA",
+                                "w": "https://www.riverremedyms.com/",
+                                "i": "ChIJGY_-R543KIYRqXvzMJePIzU",
+                                "x": "png",
+                                "lt": "32.1795727",
+                                "ln": "-90.2607573"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "1223 Bienville Boulevard, Ocean Springs, MS 39564-2911, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/ocean-springs-ms/?utm_medium=organic&utm_source=gbp&utm_campaign=ocean+springs+dispensary",
+                                "i": "ChIJOWWaLiwJnIgRnC5TVXbhiVc",
+                                "x": "svg",
+                                "lt": "30.4163875",
+                                "ln": "-88.8223742"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "1401 U.S. 49 Frontage Road, Richland, MS 39218, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/richland-ms/?utm_medium=organic&utm_source=gbp&utm_campaign=richland+dispensary",
+                                "i": "ChIJ2dKU5KEvKIYR_w6Klti4T1s",
+                                "x": "svg",
+                                "lt": "32.2419211",
+                                "ln": "-90.1652553"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "624 U.S. 90, Bay St. Louis, MS 39520-2715, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/bay-st-louis-ms/?utm_medium=organic&utm_source=gbp&utm_campaign=bay+st+louis+dispensary",
+                                "i": "ChIJ0eOcyQ8tnIgRDKPTFEfSLM0",
+                                "x": "svg",
+                                "lt": "30.3176623",
+                                "ln": "-89.3433099"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "117 Sidney Runnels Drive, Canton, MS 39046-9798, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/canton-ms/?utm_medium=organic&utm_source=gbp&utm_campaign=canton+dispensary",
+                                "i": "ChIJj0R99XjZKYYRJmW2j_vK5Qs",
+                                "x": "svg",
+                                "lt": "32.6079772",
+                                "ln": "-90.0681278"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "3600 Gautier Vancleave Road, Gautier, MS 39553-5102, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/gautier-ms/?utm_medium=organic&utm_source=gbp&utm_campaign=gautier+dispensary",
+                                "i": "ChIJ2UK_D__xm4gRrk_Qda4_mZw",
+                                "x": "svg",
+                                "lt": "30.3939529",
+                                "ln": "-88.6513554"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "4775 Old Canton Road, Jackson, MS 39211-5529, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/jackson-old-canton-dispensary/?utm_medium=organic&utm_source=gbp&utm_campaign=jackson+dispensary",
+                                "i": "ChIJ55I1EUHTKYYRvfaoY7W0IYo",
+                                "x": "svg",
+                                "lt": "32.3607875",
+                                "ln": "-90.146467"
+                            },
+                            {
+                                "n": "Rootdown",
+                                "a": "1809 Denny Avenue, Pascagoula, MS 39567-3304, USA",
+                                "w": "https://rootdownms.com/dispensary-locations/pascagoula-ms/?utm_medium=organic&utm_source=gbp&utm_campaign=pascagoula+dispensary",
+                                "i": "ChIJifEXa0npm4gRJfssEBAqoUA",
+                                "x": "svg",
+                                "lt": "30.3714717",
+                                "ln": "-88.5449508"
+                            },
+                            {
+                                "n": "Rooted in Wellness,LLC",
+                                "a": "1835 West Northside Drive, Jackson, MS 39213-4308, USA",
+                                "w": "https://www.rootedinwellnessllc.com/",
+                                "i": "ChIJIa5wRZEzKIYRdZV8e3y0MFw",
+                                "x": "png",
+                                "lt": "32.3556499",
+                                "ln": "-90.2066162"
+                            },
+                            {
+                                "n": "RymedyRx - Cannabis Dispensary",
+                                "a": "15223 Creosote Road, Gulfport, MS 39503-4233, USA",
+                                "w": "https://www.rymedyrx.com/",
+                                "i": "ChIJLTguHd49nIgRfG9xoKPrgBw",
+                                "x": "png",
+                                "lt": "30.4274883",
+                                "ln": "-89.0944049"
+                            },
+                            {
+                                "n": "3 Foot Wellness",
+                                "a": "2125 A Street A, Meridian, MS 39301-5910, USA",
+                                "w": "https://www.threefootwellness.com/",
+                                "i": "ChIJoeb6pI99hIgR8gmaFmoULNQ",
+                                "x": "png",
+                                "lt": "32.361578",
+                                "ln": "-88.6973191"
+                            },
+                            {
+                                "n": "Roots Remedy",
+                                "a": "4300 North State Street, Jackson, MS 39206-5211, USA",
+                                "w": "https://rootsremedyms.com/",
+                                "i": "ChIJ9RYNGG4zKIYRtmgGW9las_0",
+                                "x": "png",
+                                "lt": "32.3503297",
+                                "ln": "-90.174978"
+                            },
+                            {
+                                "n": "Southern Sky Wellness",
+                                "a": "422 Riverwind Drive, Pearl, MS 39208-5900, USA",
+                                "w": "https://southernskywellness.com/pearl-dispensary/?utm_source=google&utm_medium=gbp&utm_campaign=pearl_gbp",
+                                "i": "ChIJrSK9Zc0tKIYRrROYvyWWvVQ",
+                                "x": "png",
+                                "lt": "32.2665608",
+                                "ln": "-90.1391001"
+                            },
+                            {
+                                "n": "Spillway Dispensary",
+                                "a": "1220 North Shore Parkway C, Brandon, MS 39047-6383, USA",
+                                "w": "https://spillwaydispensary.com/",
+                                "i": "ChIJEWBSDQDVKYYR_pIAYEV5xlg",
+                                "x": "png",
+                                "lt": "32.3841321",
+                                "ln": "-90.0415697"
+                            },
+                            {
+                                "n": "Star Buds Oxford Medical Cannabis Dispensary",
+                                "a": "1319 North Lamar Boulevard, Oxford, MS 38655-2846, USA",
+                                "w": "https://shop.starbuds.us/stores/oxford/?utm_source=gmb&utm_medium=organic",
+                                "i": "ChIJG3uXZgV7gIgRA1QjWW0BC8g",
+                                "x": "webp",
+                                "lt": "34.3816395",
+                                "ln": "-89.5104584"
+                            },
+                            {
+                                "n": "Star Buds Greenwood Medical Cannabis Dispensary",
+                                "a": "2218 US-82 West, Greenwood, MS 38930-6071, USA",
+                                "w": "https://shop.starbuds.us/",
+                                "i": "ChIJj7vVlYRvKoYRkkf8mDTvvOE",
+                                "x": "webp",
+                                "lt": "33.5094416",
+                                "ln": "-90.1602366"
+                            },
+                            {
+                                "n": "Star Buds Natchez Medical Cannabis Dispensary",
+                                "a": "135 U.S. 61 South, Natchez, MS 39120-5216, USA",
+                                "w": "https://shop.starbuds.us/stores/natchez/?utm_source=gmb&utm_medium=organic",
+                                "i": "ChIJNedqAHfxJYYRh0QagHlRvaY",
+                                "x": "webp",
+                                "lt": "31.5181524",
+                                "ln": "-91.386157"
+                            },
+                            {
+                                "n": "Star Buds Ocean Springs Medical Cannabis Dispensary",
+                                "a": "718 Bienville Boulevard, Ocean Springs, MS 39564-2843, USA",
+                                "w": "http://shop.starbuds.us/?utm_source=gmb&utm_medium=organic",
+                                "i": "ChIJ5ZiFt6IJnIgRihDq506QHuQ",
+                                "x": "webp",
+                                "lt": "30.4155516",
+                                "ln": "-88.8318763"
+                            },
+                            {
+                                "n": "Star Buds Tupelo Medical Cannabis Dispensary",
+                                "a": "2546 Mississippi 145, Saltillo, MS 38866-6981, USA",
+                                "w": "http://www.starbuds.us/",
+                                "i": "ChIJp0ngvh5Rh4gRXKLwanyfyjk",
+                                "x": "webp",
+                                "lt": "34.3709106",
+                                "ln": "-88.6995991"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "4952 Old Canton Road, Jackson, MS 39211-5404, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJSRckHSrTKYYRTsPkyaz_7eQ",
+                                "x": "svg",
+                                "lt": "32.3654188",
+                                "ln": "-90.1455678"
+                            },
+                            {
+                                "n": "DABBS Cannabis Dispensary",
+                                "a": "1624 South Main Street, Poplarville, MS 39470-4209, USA",
+                                "w": "https://dabbsdispensary.com/",
+                                "i": "ChIJh5iwiyipnYgR4JVNvEw0kRc",
+                                "x": "svg",
+                                "lt": "30.823496",
+                                "ln": "-89.5212721"
+                            },
+                            {
+                                "n": "SweetGrass Dispensary",
+                                "a": "2650 Beach Boulevard ste 3, Biloxi, MS 39531-4526, USA",
+                                "w": "https://www.sweetgrassdispensaries.com/",
+                                "i": "ChIJewzbhsQRnIgRL1JYeUm-4ZE",
+                                "x": "svg",
+                                "lt": "30.3904675",
+                                "ln": "-88.9935606"
+                            },
+                            {
+                                "n": "The Cannabis Company Dispensary",
+                                "a": "939 Brookway Boulevard L, Brookhaven, MS 39601-2612, USA",
+                                "w": "http://thecannabiscompanydispensary.com/",
+                                "i": "ChIJNwHdr9vXJ4YRGd_GBgXj_zI",
+                                "x": "jpg",
+                                "lt": "31.577551",
+                                "ln": "-90.466538"
+                            },
+                            {
+                                "n": "Coastal Capital Dispensary",
+                                "a": "232 Debuys Road, Biloxi, MS 39531-3503, USA",
+                                "w": "https://coastalcapitaldispensary.com/",
+                                "i": "ChIJvbBA908RnIgR5rKgPqQvngc",
+                                "x": "png",
+                                "lt": "30.3957862",
+                                "ln": "-89.001062"
+                            },
+                            {
+                                "n": "REV Cannabis Dispensary",
+                                "a": "6335 U.S. 49 #40, Hattiesburg, MS 39401, USA",
+                                "w": "https://weedmaps.com/dispensaries/the-dispensary-by-rev-hattiesburg",
+                                "i": "ChIJFXtokMrfnIgRHS__6nJgf4A",
+                                "x": "png",
+                                "lt": "31.3389832",
+                                "ln": "-89.3298096"
+                            },
+                            {
+                                "n": "REV Cannabis Dispensary",
+                                "a": "3978 North Gloster Street Suite C, Tupelo, MS 38804-0913, USA",
+                                "w": "https://weedmaps.com/dispensaries/the-dispensary-by-rev",
+                                "i": "ChIJFxdhcaRPh4gRKkzczOd2jiU",
+                                "x": "png",
+                                "lt": "34.312566",
+                                "ln": "-88.7062691"
+                            },
+                            {
+                                "n": "The Green Guys of Fulton Dispensary",
+                                "a": "101 Wheeler Office B, Fulton, MS 38843-8882, USA",
+                                "w": "https://www.thegreenguysoffulton.com/",
+                                "i": "ChIJF157Xrxph4gRihrkQAFpc98",
+                                "x": "jpg",
+                                "lt": "34.2739933",
+                                "ln": "-88.4092133"
+                            },
+                            {
+                                "n": "The Green Standard Dispensary",
+                                "a": "310 Highway 16 West, Carthage, MS 39051-4424, USA",
+                                "w": "https://thegreenstandarddispensary.com/",
+                                "i": "ChIJmf7ZYUc3gogRWRXCyiikDXQ",
+                                "x": "png",
+                                "lt": "32.7353844",
+                                "ln": "-89.5297075"
+                            },
+                            {
+                                "n": "The Green Standard Dispensary",
+                                "a": "1223 Sunset Drive, Grenada, MS 38901-4025, USA",
+                                "w": "https://thegreenstandarddispensary.com/",
+                                "i": "ChIJldwrv8zNgYgRXFakbV8wS-8",
+                                "x": "png",
+                                "lt": "33.7733417",
+                                "ln": "-89.8233283"
+                            },
+                            {
+                                "n": "The Green Standard Dispensary",
+                                "a": "612 Mississippi 12 East, Starkville, MS 39759-3826, USA",
+                                "w": "https://thegreenstandarddispensary.com/",
+                                "i": "ChIJYycpJc41gYgROmPHouU7NHI",
+                                "x": "png",
+                                "lt": "33.4532484",
+                                "ln": "-88.8074452"
+                            },
+                            {
+                                "n": "The Herbalist",
+                                "a": "2520 Denny Avenue, Pascagoula, MS 39567-2413, USA",
+                                "w": "https://weedmaps.com/dispensaries/the-herbalist-3",
+                                "i": "ChIJPe_HPBrpm4gRCsKa-NPq0xE",
+                                "x": "png",
+                                "lt": "30.3713195",
+                                "ln": "-88.5372147"
+                            },
+                            {
+                                "n": "The Highest Care Dispensary",
+                                "a": "2 Sgt Prentiss Drive, Natchez, MS 39120-4722, USA",
+                                "w": "http://www.thehighestcare.com/",
+                                "i": "ChIJiXz_1r7xJYYRumQ28_nYSyw",
+                                "x": "png",
+                                "lt": "31.5218589",
+                                "ln": "-91.3898522"
+                            },
+                            {
+                                "n": "Green Wellness 420",
+                                "a": "2314 Iowa Boulevard, Vicksburg, MS 39180-5632, USA",
+                                "w": "http://greenwellness420.com/",
+                                "i": "ChIJv2jm2rDhKIYRK-OEnK6FMAM",
+                                "x": "svg",
+                                "lt": "32.3050337",
+                                "ln": "-90.8906257"
+                            },
+                            {
+                                "n": "The Magg Dispensary",
+                                "a": "901 U.S. 45 North, Columbus, MS 39701-3305, USA",
+                                "w": "https://maggdispensary.com/",
+                                "i": "ChIJV_OqrMfrhogRWLvArsOWG0U",
+                                "x": "png",
+                                "lt": "33.50347",
+                                "ln": "-88.4320066"
+                            },
+                            {
+                                "n": "The Magnolia Healing",
+                                "a": "20 Marks Road, Ocean Springs, MS 39564-4350, USA",
+                                "w": "https://themagnoliahealingms.com/",
+                                "i": "ChIJrVc6pBX3m4gRUGjSPQ2lunE",
+                                "x": "jpg",
+                                "lt": "30.4141174",
+                                "ln": "-88.783583"
+                            },
+                            {
+                                "n": "Toke and Tell",
+                                "a": "2031 Ellisville Boulevard, Laurel, MS 39440-5425, USA",
+                                "w": "https://www.tokeandtellms.com/",
+                                "i": "ChIJzYKqs7U1g4gRQpVTh-CIXME",
+                                "x": "png",
+                                "lt": "31.6666499",
+                                "ln": "-89.1544879"
+                            },
+                            {
+                                "n": "Toke and Tell",
+                                "a": "55 Sergeant Prentiss Drive, Natchez, MS 39120-4782, USA",
+                                "w": "https://www.tokeandtellms.com/",
+                                "i": "ChIJAZdcA5fxJYYRyiTJMS_e9_Y",
+                                "x": "png",
+                                "lt": "31.5283051",
+                                "ln": "-91.3886267"
+                            },
+                            {
+                                "n": "Tortuga Cannabis Company",
+                                "a": "867 U.S. 11 STE A, Petal, MS 39465, USA",
+                                "w": "https://www.leafly.com/dispensary-info/tortuga-cannabis-company",
+                                "i": "ChIJkzjuKojdnIgRJAinJB_7N9Y",
+                                "x": "png",
+                                "lt": "31.3477018",
+                                "ln": "-89.2738133"
+                            },
+                            {
+                                "n": "Uptown Funk Dispensary",
+                                "a": "1625 East County Line Road Suite 500, Jackson, MS 39211-1833, USA",
+                                "w": "http://www.uptownfunkdispensary.com/",
+                                "i": "ChIJ3azRWBDTKYYRKogKdjPGVck",
+                                "x": "png",
+                                "lt": "32.3986606",
+                                "ln": "-90.1224833"
+                            },
+                            {
+                                "n": "VooDoo Buds",
+                                "a": "3214 Service Drive, Pearl, MS 39208-3527, USA",
+                                "w": "https://www.voodoobudshq.com/",
+                                "i": "ChIJ80fGOMctKIYRSNZjsao1X1Q",
+                                "x": "jpg",
+                                "lt": "32.2837537",
+                                "ln": "-90.1120685"
+                            },
+                            {
+                                "n": "The Pfarmacy Dispensary",
+                                "a": "112 Auderer Boulevard Suite A, Waveland, MS 39576-2432, USA",
+                                "w": "https://www.wavelandpharmacy.com/",
+                                "i": "ChIJ32H3VwAtnIgRcykelLtM7ZA",
+                                "x": "png",
+                                "lt": "30.2990083",
+                                "ln": "-89.3944327"
+                            },
+                            {
+                                "n": "Wildflower Dispensary",
+                                "a": "41314 Crane Dr, Aberdeen, MS 39730-9629, USA",
+                                "w": "https://wildflowerdispensary.club/",
+                                "i": "Eig0MTMxNCBVUy00NSBBTFQsIEFiZXJkZWVuLCBNUyAzOTczMCwgVVNBIjISMAoUChIJBdnzttcrh4gR1GbEsiVgMLsQ4sICKhQKEgk3w_c1wNCGiBEroP5KtjOjMw",
+                                "x": "png",
+                                "lt": "33.8251139",
+                                "ln": "-88.5436553"
+                            },
+                            {
+                                "n": "Wyze Cannabis Dispensary - Corinth",
+                                "a": "2300 South Harper Road, Corinth, MS 38834-6717, USA",
+                                "w": "https://www.leafly.com/dispensary-info/wyze-cannabis-dispensary-corinth",
+                                "i": "ChIJj7NVxiPBfYgRC3ATDHi88wc",
+                                "x": "jpg",
+                                "lt": "34.9109362",
+                                "ln": "-88.5041886"
+                            },
+                            {
+                                "n": "Wyze Cannabis Dispensary",
+                                "a": "2348 Mount Pleasant Road, Hernando, MS 38632-1909, USA",
+                                "w": "https://www.leafly.com/dispensary-info/wyld-cannabis-dispensary",
+                                "i": "ChIJc_6sBy31f4gRdWdZOkaEn9E",
+                                "x": "jpg",
+                                "lt": "34.8258911",
+                                "ln": "-89.9837241"
+                            },
+                            {
+                                "n": "WYZE Cannabis Dispensary",
+                                "a": "1415 Goodman Road Unit 19, Horn Lake, MS 38637-1404, USA",
+                                "w": "https://www.leafly.com/dispensary-info/wyze-cannabis-dispensary-horn-lake",
+                                "i": "ChIJ9zsuUwBj1YcRmlulSQGyp-4",
+                                "x": "jpg",
+                                "lt": "34.9611657",
+                                "ln": "-90.0152839"
+                            },
+                            {
+                                "n": "WYZE MEDICAL DISPENSARY",
+                                "a": "3023 Goodman Road West, Horn Lake, MS 38637-1105, USA",
+                                "w": "https://www.leafly.com/dispensary-info/wyld-dispensary-horn-lake",
+                                "i": "ChIJzeKsWlZj1YcROadgmDvZ1gc",
+                                "x": "jpg",
+                                "lt": "34.9614892",
+                                "ln": "-90.0448277"
+                            },
+                            {
+                                "n": "WYZE Medical Dispensary",
+                                "a": "4860 Bethel Road STE C, Olive Branch, MS 38654-8745, USA",
+                                "w": "https://www.leafly.com/dispensary-info/wyld-dispensary",
+                                "i": "ChIJ3eyGfEyTf4gRMM190KRpjz4",
+                                "x": "jpg",
+                                "lt": "34.9305902",
+                                "ln": "-89.7943625"
+                            },
+                            {
+                                "n": "Young's Farm Medical Dispensary",
+                                "a": "PO Box 672, Philadelphia, MS 39350-0672, USA",
+                                "w": "http://youngsfarmdispensary.com/",
+                                "i": "ChIJc0mr_wCHg4gRTuSyJBeEjRY",
+                                "x": "png",
+                                "lt": "32.7715227",
+                                "ln": "-89.1167275"
+                            }
+                            ]
+                            shuffleArray(partners).forEach((e)=>{
+                            gallery_partners.insertAdjacentHTML('beforeend', `
+                            <div class="tiny-slide h-full">
+                            <div class=" p-6 lg:p-0 h-full align-center flex flex-col justify-center relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white overflow-hidden m-2">
+                                <img class="object-contain p-4 w-full h-fit max-h-[50vh] lg:h-auto lg:rounded-none mx-auto" src="assets/images/logos/${e.i}.${e.x}" alt="">
+                                <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
+                                    <p class="text-base text-slate-500 dark:text-slate-200"></p>
+                                    
+                                    <div class="text-center">
+                                        <span class="text-green-800 block mb-1 text-lg"> ${e.n}</span>
+                                        <span class="text-slate-400 text-sm block">${e.a.split(',')[0]}<br />${e.a.split(',').slice(1).join(',')}</span>
+                                        
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=${e.lt},${e.ln}&query_place_id=${e.i}" target="_blank" ><i class="uil uil-map-marker rounded text-2xl text-slate-200 mb-0 mr-0 p-1 hover:text-green-800"></i></a>
+                                        <a href="${e.w}" target="_blank" ><i class="uil uil-link rounded text-2xl text-slate-200 mb-0 mr-0 p-1 hover:text-green-800"></i></a>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            `);
+                        })
+
+                        
+                    
+                    </script>
+
+                        
+                        
+                        
+                    
+                </div>
+
+        </section>
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script type="text/javascript">
+            
+            if(document.getElementsByClassName('tiny-three-item').length > 0) {
+                var slider = tns({
+                    container: '.tiny-three-item',
+                    controls: true,
+                    mouseDrag: true,
+                    loop: true,
+                    rewind: true,
+                    autoplay: true,
+                    autoplayButtonOutput: false,
+                    autoplayTimeout: 3000,
+                    navPosition: "bottom",
+                    controlsText: ['<i class="mdi mdi-chevron-left "></i>', '<i class="mdi mdi-chevron-right"></i>'],
+                    nav: false,
+                    speed: 400,
+                    gutter: 0,
+                    responsive: {
+                        768: {
+                            items: 3
+                        },
+                    },
+                });
+            };
+        </script>
+    </body>
+</html>
