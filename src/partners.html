@@ -34,8 +34,8 @@
         <section class="relative md:py-0 py-0 bg-zinc-50 dark:bg-gray-800 h-full w-full" id="partners">
             
                 
-                <div class="grid grid-cols-1 m-0 h-full w-full relative">
-                    <div class="tiny-three-item h-full " id="partner-gallery">
+                <div class="grid grid-cols-1 m-0 p-0 h-full w-full relative">
+                    <div class="tiny-three-item h-full m-0 p-0" id="partner-gallery">
                     </div>
                     <script>
                         function shuffleArray(array) {
@@ -1340,10 +1340,10 @@
                             ]
                             shuffleArray(partners).forEach((e)=>{
                             gallery_partners.insertAdjacentHTML('beforeend', `
-                            <div class="tiny-slide h-full">
-                            <div class=" p-6 lg:p-0 h-full align-center flex flex-col justify-center relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white overflow-hidden m-2">
-                                <img class="object-contain p-4 w-full h-fit max-h-[50vh] lg:h-auto lg:rounded-none mx-auto" src="assets/images/logos/${e.i}.${e.x}" alt="">
-                                <div class="pt-6 lg:p-6 text-center lg:text-left space-y-4">
+                            <div class="tiny-slide h-full p-0 m-0">
+                            <div class=" p-0 lg:p-0 h-full align-center flex flex-col justify-center relative rounded-md shadow shadow-slate-200 dark:shadow-slate-700 bg-white overflow-hidden ml-1 mr-1">
+                                <img class="object-contain pt-0 pb-0 pr-6 pl-6 w-full h-fit max-h-[40vh] lg:h-auto lg:rounded-none mx-auto" src="assets/images/logos/${e.i}.${e.x}" alt="">
+                                <div class="p-0 m-0text-center lg:text-left space-y-4">
                                     <p class="text-base text-slate-500 dark:text-slate-200"></p>
                                     
                                     <div class="text-center">
