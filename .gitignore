@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+dist/
+
+*.zip
+*/.DS_Store
+
+.cursorrules
+
+src/assets/csv
